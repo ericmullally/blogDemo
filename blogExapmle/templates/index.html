@@ -1,40 +1,40 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'CSS/base.css' %}">
+  <title>Horror Blog</title>
 </head>
 
 <body>
-    <div id="loginForm" style ="width: 40%;margin-left: 30%;margin-top: 11%;padding: 4%;background-color: black;color: white;">
-        <form class="container" style="height: 35%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;" >
-            <h1>Welcome</h1>
-            <label for="username">Username</label>
-            <input type="text" placeholder="Name">
-            <label for="password">Password</label>
-            <input type="text" placeholder="password">
-            <div style="width: 35%;
-            display: flex;
-            justify-content: space-around;">
-                <button class="submit" style="border: none;
-                width: 40%;
-                background-color: green;" >Submit</button>
-                <button class="cancel" style="border: none;
-                width: 40%;
-                background-color: red;">Cancel</button>
-            </div>
-            <button class="toggle-login-create" style="border: none;
-            background: none;
-            color: white;
-            text-decoration: underline;">Create Account</button>
-            
-        </form>
-        
-    </div>
+ 
+  <div class="blog-container" >
+    {% for blog in blogContient  %}
+    
+      <div class="blog"> 
+        <img class="blog-img" src={{blog.img}}/>
+        <div class= "photo-overlay"></div>
+        <div class="blog-text-container">
+          <h1 class="blog-title">{{blog.title}}</h1>
+          <p class="blog-paragraph">{{blog.paragraph}}</p>
+          <a class="blog-link" href={{blog.url}}>View full post </a>
+        </div>
+      </div>
+
+    {% endfor %}
+  </div>
+  <footer>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </footer>
 </body>
+
 </html>

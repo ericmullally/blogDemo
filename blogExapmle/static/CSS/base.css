@@ -1,0 +1,56 @@
+
+:root {
+    --primary-color: rgb(19, 4, 4);
+    --secondar-color: rgb(46, 43, 43);
+    --title-color: rgb(3, 56, 3);
+  }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+  background-image: url("../IMGS/stefano-pollio-ZC0EbdLC8G0-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding:2%;
+}
+
+.blog-img{
+  width:100%;
+  height: 100%;
+}
+
+.blog-container{
+  width: 50%;
+  margin: auto;
+  box-shadow: black -3px 3px 12px;
+}
+.blog{
+  position: relative;
+  height: 50vh;
+}
+.blog-title{
+  font-size: 3rem;
+}
+
+.blog-text-container{
+  position: absolute;
+  bottom:30%;
+  padding:5%;
+  text-align: center;
+
+}
+
+.photo-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.397);
+}
