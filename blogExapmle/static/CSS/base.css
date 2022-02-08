@@ -18,7 +18,17 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding:2%;
+  padding: 2% 0% 2% 2%;
+}
+
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+.header-img{
+ height: 10rem;
 }
 
 .blog-img{
@@ -71,8 +81,6 @@ body{
   will-change: transform;
 }
 
-
-
 .blog img{
   transition: var(--all-transition);
   will-change: transform;
@@ -89,4 +97,57 @@ body{
 .blog:hover a{
   text-decoration: underline;
   transform:scale(1.03);
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 50%, black 70%, white );
+  margin: 2% 0% -3% -3%;
+  color: white;
+  flex-direction: column;
+  padding-bottom: 2%;
+}
+
+.footer-items{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  list-style: none;
+  text-align: center;
+  height:15rem;
+}
+
+.footer-items a, 
+.footer-items a:visited,
+.footer-items a:active{
+  text-decoration: none;
+  color:white;
+}
+
+.signup-item input{
+  margin-top: 6%;
+  
+}
+
+.signup-item button{
+  padding: 2px 9px 2px 9px;  
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-img{
+  background-color: black;
+  width:40%;
+  cursor: pointer;
+}
+
+.icon-container{
+  display: flex;
+  list-style: none;
+  padding: 2% 0% 2% 4%;
+  width: 50%;
+  justify-content: center;
 }
