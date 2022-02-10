@@ -25,10 +25,37 @@ body{
 header{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+header ul{
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+header a,
+header a:visited,
+header a:active{
+  text-decoration: none;
+  border-bottom: solid black 1px;
+  border-bottom-style: hidden;
+  color: black;
+  transition: all ease-in .3s;
+  
+}
+
+header a:hover{
+  border-bottom-style:solid;
+  transform:scale(1.5);
 }
 
 .header-img{
- height: 10rem;
+  height: 10rem;
+  width: 20rem;
 }
 
 .blog-img{
@@ -65,7 +92,7 @@ header{
   position: absolute;
   top:0;
   left:0;
-  width:100%;
+  width:101%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.295);
   transition: var(--all-transition);
@@ -84,6 +111,7 @@ header{
 .blog img{
   transition: var(--all-transition);
   will-change: transform;
+  width:101%;
 }
 
 .blog:hover img{

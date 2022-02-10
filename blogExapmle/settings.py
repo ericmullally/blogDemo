@@ -56,7 +56,7 @@ ROOT_URLCONF = 'blogExapmle.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR/"blogExapmle/templates"],
+        'DIRS': [BASE_DIR/"blogExapmle/templates", BASE_DIR/"blogs/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,5 +125,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-     BASE_DIR/"blogExapmle/static",
+    BASE_DIR/"blogExapmle/static",
 ]

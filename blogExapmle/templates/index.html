@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{%extends "base.html"%}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% load static %}
-  <link rel="stylesheet" type="text/css" href="{% static 'CSS/base.css' %}">
-  <title>Horror Blog</title>
-</head>
-
-<body>
- <header>
-   <img class="header-img" src={% static 'IMGS/logo.png'%} />
-   <ul>
-     <li><a href="/">Home</a></li>
-     <li><a href="/blogs">Blog</a></li>
-     <li><a href="/catagories">Catagories</a></li>
-     <li><a href="/credits">Credits</a></li>
-   </ul>
-</header>
+{%block "content" %}
   <div class="blog-container" >
     {% for blog in blogContient  %}
     
@@ -35,23 +16,4 @@
 
     {% endfor %}
   </div>
-  <footer>
-    <ul class="icon-container">
-      <li><a href="https://instagram.com"  target="_blank"><img class="icon-img" src={% static 'IMGS/svgs/instagram.png'%} /></a></li> 
-      <li><a href="https://facebook.com" target="_blank"><img class="icon-img" src={% static 'IMGS/svgs/facebook.png'%} /></a></li>
-      <li><a href="https://twitter.com" target="_blank"><img class="icon-img" src={% static 'IMGS/svgs/twitter.png'%} /></a></li>
-      <li><a href="https://youtube.com" target="_blank"><img class="icon-img" src={% static 'IMGS/svgs/youtube.png'%} /></a></li>
-    </ul>
-    <ul class="footer-items">
-      <li><a href ="/">Contact</a></li>
-      <li><a href ="/">Credits</a></li>
-      <li class="signup-item">
-        <p>Signup for our newsletter!</p>
-        <input type="text" placeholder="Email" name="Email"/>
-        <button name="submit">Submit</button>
-      </li>
-    </ul>
-  </footer>
-</body>
-
-</html>
+  {%endblock%}
