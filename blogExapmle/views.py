@@ -10,7 +10,7 @@ def home_page(request):
             "paragraph": "Minim in minim ad duis proident qui cillum cillum laborum dolore.\
                     Minim in minim ad duis proident qui cillum cillum laborum dolore.\
                     Minim in minim ad duis proident qui cillum cillum laborum dolore.",
-            "url": "/title 1"
+            "url": "/blogs/blog_1"
         },
         {
             "img": "static/IMGS/m-wrona-pCgxm-HDMNs-unsplash.jpg",
@@ -18,7 +18,7 @@ def home_page(request):
             "paragraph": "Minim in minim ad duis proident qui cillum cillum laborum dolore.\
                     Minim in minim ad duis proident qui cillum cillum laborum dolore.\
                     Minim in minim ad duis proident qui cillum cillum laborum dolore.",
-            "url": "/title 1"
+            "url": "/blogs/blog_2"
         },
 
         {
@@ -27,7 +27,7 @@ def home_page(request):
             "paragraph": "Minim in minim ad duis proident qui cillum cillum laborum dolore.\
                     Minim in minim ad duis proident qui cillum cillum laborum dolore.\
                     Minim in minim ad duis proident qui cillum cillum laborum dolore.",
-            "url": "/title 1"
+            "url": "/blogs/blog_3"
 
         }
     ]

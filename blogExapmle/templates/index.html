@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{%extends "base.html"%}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% load static %}
-  <link rel="stylesheet" type="text/css" href="{% static 'CSS/base.css' %}">
-  <title>Horror Blog</title>
-</head>
-
-<body>
- 
+{%block "content" %}
   <div class="blog-container" >
     {% for blog in blogContient  %}
     
@@ -21,20 +10,10 @@
         <div class="blog-text-container">
           <h1 class="blog-title">{{blog.title}}</h1>
           <p class="blog-paragraph">{{blog.paragraph}}</p>
-          <a class="blog-link" href={{blog.url}}>View full post </a>
+          <a class="blog-link"  href={{blog.url}}>View full post </a>
         </div>
       </div>
 
     {% endfor %}
   </div>
-  <footer>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </footer>
-</body>
-
-</html>
+  {%endblock%}
