@@ -1,5 +1,19 @@
 {%extends "base.html"%}
+{% load static%}
+{%block "stylesheets"%}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/fullBlog.css' %}">
+{%endblock%}
 
 {%block "content"%}
-<h1>{{blog}}</h1>
+<div id="hero">
+    <div class="image-cover" ></div>
+    <img class="hero-img" src={{img}}/>
+    <h1>{{title}}</h1>
+</div>
+<div class="content-container">
+    {% for p in paragraph %}
+    <p class="content">{{p}}</p>
+    {% endfor %}
+    
+</div>
 {%endblock%}

@@ -1,8 +1,8 @@
 
 :root {
-    --primary-color: rgb(19, 4, 4);
+    --primary-color: rgb(201, 197, 197);
     --secondar-color: rgb(46, 43, 43);
-    --title-color: rgb(3, 56, 3);
+    --title-color: rgb(218, 216, 216);
     --all-transition: all ease-in 0.3s;
   }
 
@@ -19,6 +19,7 @@ body{
   background-position: center;
   background-size: cover;
   padding: 2% 0% 2% 2%;
+  overflow-x: hidden;
 }
 
 
@@ -32,9 +33,10 @@ header{
 header ul{
   display: flex;
   list-style: none;
-  width: 30%;
+  width: 50%;
   justify-content: space-around;
   margin-bottom: 2%;
+  font-size: 34px;
 }
 
 header a,
@@ -130,7 +132,7 @@ header a:hover{
 footer{
   display: flex;
   align-items: center;
-  background: radial-gradient(circle at 50%, black 70%, white );
+  background-color: black;
   margin: 2% 0% -3% -3%;
   color: white;
   flex-direction: column;
