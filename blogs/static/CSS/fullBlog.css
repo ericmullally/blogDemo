@@ -40,11 +40,11 @@ body{
 #hero h1{
     font-size: 4rem;
     position: absolute;
-    top: 94%;
-    left: 26%;
-    width: 50%;
-    padding: 16px;
-    text-align: center;
+    top: 93%;
+    left: -3%;
+    width: 63%;
+    padding: 16px 30px 16px 16px;
+    text-align: right;
     box-shadow: 3px 3px 5px black;
     background-color: var(--title-color);
     border-radius: 5px;
