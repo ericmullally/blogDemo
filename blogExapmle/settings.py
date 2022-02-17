@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "blogs"
 ]
 
 MIDDLEWARE = [
@@ -126,4 +127,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     BASE_DIR/"blogExapmle/static",
+    BASE_DIR/"blogs/static"
 ]
