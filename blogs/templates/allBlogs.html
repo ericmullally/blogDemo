@@ -1,0 +1,33 @@
+{%extends "base.html"%}
+{% load static%}
+{%block "stylesheets"%}
+<link rel="stylesheet" type="text/css" href="{% static 'CSS/allBlogs.css' %}">
+{%endblock%}
+
+{%block "content"%}
+<div class="all-content">
+   <div class="blog-grid">
+
+      <div class="blog-container">
+         <img class="blog-image" src={%static "IMGS/daniel-jensen-NMk1Vggt2hg-unsplash.jpg" %}/>
+         <h3>Title</h3>
+         <p class="preview">Deserunt id cupidatat est enim dolore consequat enim occaecat mollit mollit qui in irure.</p>
+         <h4 class="author-name">Author</h4>
+         <p class="date"><strong class="date-span">Date:</strong> 09/15/21</p>
+         <div class="img-cover"></div>
+      </div>
+    
+   </div>
+   <section class="explore-more">
+      <div class="explore-div">
+
+      </div>
+      <div class="explore-div">
+
+      </div>
+      <div class="explore-div">
+
+      </div>
+   </section>
+</div>
+{%endblock%}

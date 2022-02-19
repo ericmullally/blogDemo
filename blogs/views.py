@@ -91,7 +91,7 @@ blogs = [
 
 
 def index(request):
-    return HttpResponse("Blog Page")
+    return render(request, "allBlogs.html")
 
 
 def blog_post(request, name):
