@@ -29,12 +29,16 @@ body{
 }
 
 .content-container{
-    font-size: 25px;
-    margin: 70vh auto 14vh auto;
-    width: 50%;
+    font-size: 18px;
+    margin: 56vh auto 12vh auto;
+    width: 47%;
     padding: 3vw;
+    box-shadow: -5px 5px 10px black;
+    background-color: white;
+    border-radius: 5px;
 }
 
+<<<<<<< HEAD
 
 
 #hero h1{
@@ -48,7 +52,16 @@ body{
     box-shadow: 3px 3px 5px black;
     background-color: var(--title-color);
     border-radius: 5px;
+=======
+.content-container h1{
+    font-size: 3vw;
+    padding-left: 3%;
+    padding-top: 2%;
+    height: 5vw;
+    text-align: center;
+>>>>>>> ec55242ea29461b728eb8acb4c3cfd0d39d79a2c
 }
+
 
 .content{
     padding: 31px;

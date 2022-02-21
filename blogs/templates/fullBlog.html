@@ -8,12 +8,17 @@
 <div id="hero">
     <div class="image-cover" ></div>
     <img class="hero-img" src={{img}}/>
-    <h1>{{title}}</h1>
 </div>
 <div class="content-container">
+    <h1>{{title}}</h1>
     {% for p in paragraph %}
     <p class="content">{{p}}</p>
     {% endfor %}
-    
+    <div class="author-section">
+        <img/>
+        <h5>Author:</h5>
+        <p></p>
+        <p></p>
+    </div>
 </div>
 {%endblock%}
