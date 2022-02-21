@@ -10,6 +10,16 @@
     width: 50%;
     margin: auto;
 }
+.blog-grid a, 
+.blog-grid a:visited, 
+.blog-grid a:active{
+  color:black;
+}
+
+.blog-grid a:hover > .blog-image{
+    transform:scale(1.09);
+    filter: blur(1.3px);
+}
 
 .blog-image{
     max-height: 100%;
@@ -17,12 +27,15 @@
     border-radius: 5px;
     box-shadow: -3px 4px 8px black;
     border-radius: 5px;
+    transition: all ease-in .3s;
+    will-change: scale, blur;
 }
 
 .blog-container{
     position: relative;
     width: 100%;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .img-cover{
@@ -109,4 +122,9 @@
     text-decoration: none;
     font-size: 1vw;
     font-weight: bold;
+    will-change: scale;
+}
+
+.explore-div a:hover{
+    transform: scale(1.09);
 }

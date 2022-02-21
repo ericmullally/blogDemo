@@ -18,5 +18,6 @@ from . import views
 
 urlpatterns = [
     path('', views.home_page, name='home'), # handles the landing page
-    path('blogs/', include('blogs.urls')) # sends all blog traffic to blogs
+    path('blogs/', include('blogs.urls')), # sends all blog traffic to blogs
+    path('categories/', include('categories.urls')) # send all category traffic to categories
 ]
